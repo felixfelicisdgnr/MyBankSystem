@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.MoneyTransferController">
+   <Label alignment="CENTER" layoutX="75.0" layoutY="18.0" text="PARA YATIRMA ">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="426.0" layoutY="18.0" text="PARA ÇEKME">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </Label>
+   <Label layoutX="247.0" layoutY="291.0" text="MEVCUT BAKİYENİZ" />
+   <Button layoutX="119.0" layoutY="157.0" mnemonicParsing="false" onAction="#onClickYatir" text="YATIR" />
+   <Button layoutX="458.0" layoutY="156.0" mnemonicParsing="false" onAction="#onClickCek" prefHeight="26.0" prefWidth="47.0" text="ÇEK" />
+   <Label fx:id="lblBalance" alignment="CENTER" layoutX="-2.0" layoutY="312.0" prefHeight="27.0" prefWidth="600.0" text="PARA">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <TextField fx:id="lblDeposit" layoutX="68.0" layoutY="118.0" promptText="MİKTAR" />
+   <TextField fx:id="lblWithdraw" layoutX="407.0" layoutY="118.0" promptText="MİKTAR" />
+</AnchorPane>

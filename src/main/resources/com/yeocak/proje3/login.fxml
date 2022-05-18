@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.LoginController">
+    <Label layoutX="215.0" layoutY="50.0" text="Giriş yap">
+        <font>
+          <Font size="45.0" />
+        </font>
+    </Label>
+    <TextField fx:id="TextFieldTc" layoutX="200.0" layoutY="135.0" onKeyPressed="#onTextFieldsChanged" prefHeight="25.0" prefWidth="200.0" promptText="TC Kimlik No">
+        <font>
+          <Font size="14.0" />
+        </font>
+    </TextField>
+    <PasswordField fx:id="TextFieldPassword" layoutX="200.0" layoutY="170.0" onKeyPressed="#onTextFieldsChanged" prefHeight="25.0" prefWidth="200.0" promptText="Şifre">
+        <font>
+          <Font size="14.0" />
+        </font>
+    </PasswordField>
+    <Button layoutX="301.0" layoutY="215.0" mnemonicParsing="false" onAction="#onClickLogin" prefHeight="30.0" prefWidth="98.0" text="GİRİŞ">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </Button>
+    <Button layoutX="200.0" layoutY="215.0" mnemonicParsing="false" onAction="#onClickRegister" prefHeight="30.0" prefWidth="98.0" text="KAYIT OL">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </Button>
+   <Label fx:id="ErrorMessage" layoutX="227.0" layoutY="258.0" text="Bilgilerinizi kontrol edin." textFill="RED" visible="false">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+</AnchorPane>

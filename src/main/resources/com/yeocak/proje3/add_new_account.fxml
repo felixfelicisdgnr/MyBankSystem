@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.AddNewAccountController">
+    <Label alignment="CENTER" layoutX="126.0" layoutY="14.0" prefHeight="18.0" prefWidth="323.0" text="YENİ HESAP OLUŞTURMA" />
+    <ListView fx:id="lvAccountTypes" layoutX="180.0" layoutY="91.0" prefHeight="157.0" prefWidth="200.0" />
+    <Button alignment="CENTER" layoutX="226.0" layoutY="275.0" mnemonicParsing="false" onAction="#onClickHesapOlustur" text="HESAP OLUŞTUR" />
+    <Label alignment="CENTER" layoutX="118.0" layoutY="57.0" prefHeight="18.0" prefWidth="323.0" text="OLUŞTURMAK İSTEDİĞİNİZ HESAP TÜRÜNÜ SEÇİNİZ" />
+    <Label alignment="CENTER" layoutX="163.0" layoutY="322.0" prefHeight="18.0" prefWidth="231.0" text="HESABINIZ OLUŞTURULDU" visible="false" />
+   <Label fx:id="lblAdded" layoutX="229.0" layoutY="323.0" text="Yeni hesap eklendi" textFill="#018328" visible="false" />
+</AnchorPane>

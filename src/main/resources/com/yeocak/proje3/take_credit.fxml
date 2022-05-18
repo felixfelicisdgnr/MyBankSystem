@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.TakeCreditController">
+   <ComboBox fx:id="comboSelections" layoutX="173.0" layoutY="227.0" prefHeight="26.0" prefWidth="219.0" promptText="Ödeme planlaması seçenekleri" />
+   <Label fx:id="lblTitle" alignment="CENTER" layoutY="4.0" prefHeight="80.0" prefWidth="600.0" text="KREDİ BİLGİLERİ ">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <TextField fx:id="edtAmount" alignment="CENTER" layoutX="154.0" layoutY="188.0" prefHeight="26.0" prefWidth="256.0" promptText="Çekmek istediğiniz kredi miktarını giriniz" />
+   <Accordion layoutX="239.0" layoutY="124.0" />
+   <Button fx:id="btnSubmit" alignment="CENTER" layoutX="243.0" layoutY="294.0" mnemonicParsing="false" onAction="#onClickKrediCek" text="Kredi Çek">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <Label fx:id="lblYesCredit" layoutX="181.0" layoutY="104.0" prefHeight="20.0" prefWidth="202.0" text="Mevcut krediniz bulunmaktadır.">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblNoCredit" layoutX="174.0" layoutY="84.0" text="Mevcut krediniz bulunmamaktadır.">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+</AnchorPane>

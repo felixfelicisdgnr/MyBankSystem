@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.BossBankSummaryController">
+   <children>
+      <TableView fx:id="table" layoutX="9.0" layoutY="52.0" prefHeight="267.0" prefWidth="579.0">
+        <columns>
+          <TableColumn fx:id="tableLogId" prefWidth="66.39996337890625" text="log id" />
+          <TableColumn fx:id="tableSourceTc" prefWidth="76.800048828125" text="Kaynak TC" />
+            <TableColumn fx:id="tableTargetTc" prefWidth="92.79998779296875" text="Hedef TC" />
+            <TableColumn fx:id="tableOperation" prefWidth="51.20001220703125" text="İşlem" />
+            <TableColumn fx:id="tableAmount" prefWidth="44.0" text="Tutar" />
+            <TableColumn fx:id="tableSourceBalance" prefWidth="102.39996337890625" text="Kaynak Bakiye" />
+            <TableColumn fx:id="tableTargetBalance" prefWidth="86.4000244140625" text="Hedef Bakiye" />
+            <TableColumn fx:id="tableDate" prefWidth="58.4000244140625" text="Tarih" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="215.0" layoutY="332.0" prefHeight="18.0" prefWidth="41.0" text="SON" />
+      <TextField fx:id="edtTableCount" alignment="CENTER" layoutX="263.0" layoutY="328.0" prefHeight="25.0" prefWidth="51.0" />
+      <Label alignment="CENTER" layoutX="326.0" layoutY="332.0" prefHeight="18.0" prefWidth="88.0" text="İŞLEM LİSTELE" />
+      <Label alignment="CENTER" layoutX="107.0" layoutY="14.0" prefHeight="18.0" prefWidth="363.0" text="BANKA ÖZETİ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

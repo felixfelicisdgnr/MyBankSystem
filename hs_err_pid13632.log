@@ -1,0 +1,220 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 266338304 bytes for G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3530), pid=13632, tid=12208
+#
+# JRE version:  (18.0.1.1+2) (build )
+# Java VM: OpenJDK 64-Bit Server VM (18.0.1.1+2-6, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:D:\IntelliJ IDEA Community Edition 2022.1\lib\idea_rt.jar=59875:D:\IntelliJ IDEA Community Edition 2022.1\bin -Dfile.encoding=UTF-8 --module-path=C:\Users\ocak\.m2\repository\org\openjfx\javafx-controls\18-ea+6\javafx-controls-18-ea+6-win.jar;C:\Users\ocak\.m2\repository\com\dlsc\formsfx\formsfx-core\11.3.2\formsfx-core-11.3.2.jar;C:\Users\ocak\.m2\repository\org\openjfx\javafx-base\18-ea+6\javafx-base-18-ea+6-win.jar;D:\IntelliJ IDEA Community Edition 2022.1\Projects\Proje3\target\classes;C:\Users\ocak\.m2\repository\org\openjfx\javafx-fxml\18-ea+6\javafx-fxml-18-ea+6-win.jar;C:\Users\ocak\.m2\repository\org\openjfx\javafx-graphics\18-ea+6\javafx-graphics-18-ea+6-win.jar -Djdk.module.main=com.yeocak.proje3 com.yeocak.proje3/com.yeocak.proje3.MainApp
+
+Host: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz, 12 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1706)
+Time: Mon May 16 18:01:59 2022 Türkiye Standart Saati elapsed time: 0.015791 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001f783e95410):  JavaThread "Unknown thread" [_thread_in_vm, id=12208, stack(0x0000000a17c00000,0x0000000a17d00000)]
+
+Stack: [0x0000000a17c00000,0x0000000a17d00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x69887a]
+V  [jvm.dll+0x7f38bd]
+V  [jvm.dll+0x7f51ce]
+V  [jvm.dll+0x7f5883]
+V  [jvm.dll+0x25ca3f]
+V  [jvm.dll+0x6957c9]
+V  [jvm.dll+0x68a2fa]
+V  [jvm.dll+0x321efb]
+V  [jvm.dll+0x3298d6]
+V  [jvm.dll+0x37e47e]
+V  [jvm.dll+0x37e6af]
+V  [jvm.dll+0x2f9c7a]
+V  [jvm.dll+0x2facdd]
+V  [jvm.dll+0x7c24f0]
+V  [jvm.dll+0x38b801]
+V  [jvm.dll+0x7a1203]
+V  [jvm.dll+0x40d6bf]
+V  [jvm.dll+0x40f091]
+C  [jli.dll+0x526b]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x52651]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffdca3ad550, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000001f783f05ae0 WorkerThread "GC Thread#0" [stack: 0x0000000a17d00000,0x0000000a17e00000] [id=12468]
+  0x000001f783f12820 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000000a17e00000,0x0000000a17f00000] [id=5328]
+  0x000001f781e4e180 WorkerThread "G1 Conc#0" [stack: 0x0000000a17f00000,0x0000000a18000000] [id=14112]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffdc9bda217]
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000001f783e8fdd0] Heap_lock - owner thread: 0x000001f783e95410
+
+Heap address: 0x0000000702800000, size: 4056 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 0.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 4 size 8 Array Of Cards #cards 16 size 48 Howl #buckets 8 coarsen threshold 3686 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 4096
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x0000000702800000, 0x0000000800000000)
+  region size 2048K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffdc9fc0cb9]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (1 events):
+Event: 0.010 Loaded shared library C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin\java.dll
+
+
+Dynamic libraries:
+0x00007ff7b1a00000 - 0x00007ff7b1a0e000 	C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin\java.exe
+0x00007ffe34d90000 - 0x00007ffe34f85000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffe34c90000 - 0x00007ffe34d4d000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffe325a0000 - 0x00007ffe3286d000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffe324a0000 - 0x00007ffe325a0000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffdff3f0000 - 0x00007ffdff40a000 	C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin\VCRUNTIME140.dll
+0x00007ffe00120000 - 0x00007ffe00137000 	C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin\jli.dll
+0x00007ffe343a0000 - 0x00007ffe34540000 	C:\Windows\System32\USER32.dll
+0x00007ffe1c740000 - 0x00007ffe1c9da000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffe32ac0000 - 0x00007ffe32ae2000 	C:\Windows\System32\win32u.dll
+0x00007ffe33160000 - 0x00007ffe331fe000 	C:\Windows\System32\msvcrt.dll
+0x00007ffe33720000 - 0x00007ffe3374a000 	C:\Windows\System32\GDI32.dll
+0x00007ffe32c60000 - 0x00007ffe32d6b000 	C:\Windows\System32\gdi32full.dll
+0x00007ffe329d0000 - 0x00007ffe32a6d000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffe330b0000 - 0x00007ffe330e0000 	C:\Windows\System32\IMM32.DLL
+0x00007ffe198c0000 - 0x00007ffe198cc000 	C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin\vcruntime140_1.dll
+0x00007ffde65a0000 - 0x00007ffde662d000 	C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin\msvcp140.dll
+0x00007ffdc98d0000 - 0x00007ffdca4e0000 	C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin\server\jvm.dll
+0x00007ffe342f0000 - 0x00007ffe3439e000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffe33750000 - 0x00007ffe337ec000 	C:\Windows\System32\sechost.dll
+0x00007ffe32de0000 - 0x00007ffe32f05000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffe335a0000 - 0x00007ffe335a8000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffe2c9b0000 - 0x00007ffe2c9ba000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffe2ba00000 - 0x00007ffe2ba27000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffe2f5e0000 - 0x00007ffe2f5e9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffe341c0000 - 0x00007ffe3422b000 	C:\Windows\System32\WS2_32.dll
+0x00007ffe302c0000 - 0x00007ffe302d2000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ffe197d0000 - 0x00007ffe197da000 	C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin\jimage.dll
+0x00007ffe1bda0000 - 0x00007ffe1bf84000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffe1b260000 - 0x00007ffe1b28c000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffe32b20000 - 0x00007ffe32ba2000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffe1bb90000 - 0x00007ffe1bb9e000 	C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin\instrument.dll
+0x00007ffdfaee0000 - 0x00007ffdfaf05000 	C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;C:\Users\ocak\.jdks\openjdk-18.0.1.1\bin\server
+
+VM Arguments:
+jvm_args: -javaagent:D:\IntelliJ IDEA Community Edition 2022.1\lib\idea_rt.jar=59875:D:\IntelliJ IDEA Community Edition 2022.1\bin -Dfile.encoding=UTF-8 --module-path=C:\Users\ocak\.m2\repository\org\openjfx\javafx-controls\18-ea+6\javafx-controls-18-ea+6-win.jar;C:\Users\ocak\.m2\repository\com\dlsc\formsfx\formsfx-core\11.3.2\formsfx-core-11.3.2.jar;C:\Users\ocak\.m2\repository\org\openjfx\javafx-base\18-ea+6\javafx-base-18-ea+6-win.jar;D:\IntelliJ IDEA Community Edition 2022.1\Projects\Proje3\target\classes;C:\Users\ocak\.m2\repository\org\openjfx\javafx-fxml\18-ea+6\javafx-fxml-18-ea+6-win.jar;C:\Users\ocak\.m2\repository\org\openjfx\javafx-graphics\18-ea+6\javafx-graphics-18-ea+6-win.jar -Djdk.module.main=com.yeocak.proje3 
+java_command: com.yeocak.proje3/com.yeocak.proje3.MainApp
+java_class_path (initial): C:\Users\ocak\.m2\repository\mysql\mysql-connector-java\8.0.29\mysql-connector-java-8.0.29.jar;C:\Users\ocak\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\ocak\.m2\repository\org\openjfx\javafx-controls\18-ea+6\javafx-controls-18-ea+6.jar;C:\Users\ocak\.m2\repository\org\openjfx\javafx-graphics\18-ea+6\javafx-graphics-18-ea+6.jar;C:\Users\ocak\.m2\repository\org\openjfx\javafx-base\18-ea+6\javafx-base-18-ea+6.jar;C:\Users\ocak\.m2\repository\org\openjfx\javafx-fxml\18-ea+6\javafx-fxml-18-ea+6.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 10                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 2097152                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 266338304                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4253024256                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 2097152                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 4253024256                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-18.0.1.1
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\ocak\AppData\Local\Microsoft\WindowsApps;
+USERNAME=Yunus Emre Ocak
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.1706)
+OS uptime: 0 days 9:06 hours
+
+CPU: total 12 (initial active 12) (6 cores per cpu, 2 threads per core) family 6 model 165 stepping 2 microcode 0xc6, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, fma, vzeroupper, clflush, clflushopt
+
+Memory: 4k page, system-wide physical 16218M (3202M free)
+TotalPageFile size 16218M (AvailPageFile size 230M)
+current process WorkingSet (physical memory assigned to process): 11M, peak: 11M
+current process commit charge ("private bytes"): 64M, peak: 318M
+
+vm_info: OpenJDK 64-Bit Server VM (18.0.1.1+2-6) for windows-amd64 JRE (18.0.1.1+2-6), built on Apr 25 2022 21:50:56 by "mach5one" with MS VC++ 16.8 / 16.9 (VS2019)
+
+END.

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.RegisterController">
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#59646f" height="100.0" layoutX="-6.0" stroke="BLACK" strokeType="INSIDE" width="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    <TextField fx:id="tfName" layoutX="49.0" layoutY="142.0" />
+    <TextField fx:id="tfTc" layoutX="364.0" layoutY="142.0" promptText="99999999999" />
+    <TextField fx:id="tfPhoneNumber" layoutX="49.0" layoutY="195.0" promptText="09999999999" />
+    <TextField fx:id="tfAddress" layoutX="49.0" layoutY="246.0" />
+    <TextField fx:id="tfEmail" layoutX="49.0" layoutY="301.0" />
+    <PasswordField fx:id="tfPassword" layoutX="364.0" layoutY="195.0" />
+    <Label layoutX="50.0" layoutY="121.0" text="*İsim:" />
+    <Label layoutX="49.0" layoutY="177.0" text="*Telefon:" />
+    <Label layoutX="50.0" layoutY="229.0" text="*Adres" />
+    <Label layoutX="49.0" layoutY="284.0" text="*Eposta" />
+    <Label layoutX="364.0" layoutY="121.0" text="*TC Kimlik No:" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="256.0" layoutY="40.0" prefHeight="100.0" prefWidth="600.0" text="Kullanıcı Kayıt" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <font>
+            <Font size="34.0" />
+        </font>
+    </Label>
+    <Label layoutX="364.0" layoutY="177.0" text="*Şifre:" />
+    <Button layoutX="392.0" layoutY="294.0" mnemonicParsing="false" onAction="#onClickRegister" text="Kayıt Ol">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Button>
+   <ComboBox fx:id="choiceRole" layoutX="360.0" layoutY="246.0" prefWidth="150.0" promptText="ROL SEÇİN" visibleRowCount="3" />
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.ListView?>
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.RepUpdateController">
+   <children>
+      <Label alignment="CENTER" layoutX="79.0" layoutY="25.0" prefHeight="28.0" prefWidth="414.0" text="MÜŞTERİ GÜNCELLEME">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="edtName" alignment="CENTER" layoutX="375.0" layoutY="80.0" promptText="Ad  Soyad" />
+      <TextField fx:id="edtTc" alignment="CENTER" layoutX="375.0" layoutY="119.0" promptText="TC" disable="true" />
+      <TextField fx:id="edtPhoneNumber" alignment="CENTER" layoutX="375.0" layoutY="159.0" promptText="Telefon" />
+      <TextField fx:id="edtAddress" alignment="CENTER" layoutX="375.0" layoutY="202.0" promptText="Adres" />
+      <TextField fx:id="edtEmail" alignment="CENTER" layoutX="375.0" layoutY="245.0" promptText="Email" />
+      <TextField fx:id="edtPassword" alignment="CENTER" layoutX="375.0" layoutY="286.0" promptText="Şifre" disable="true" />
+      <Button layoutX="413.0" layoutY="332.0" mnemonicParsing="false" onAction="#onClickGuncelle" text="GÜNCELLE" />
+      <ListView fx:id="lvUsers" layoutX="61.0" layoutY="77.0" prefHeight="274.0" prefWidth="208.0" />
+   </children>
+</AnchorPane>

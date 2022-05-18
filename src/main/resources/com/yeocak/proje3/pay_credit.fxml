@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.PayCreditController">
+    <Label alignment="CENTER" layoutX="173.0" layoutY="30.0" prefHeight="26.0" prefWidth="254.0" text="KREDİ BİLGİLERİNİZ">
+        <font>
+            <Font size="17.0" />
+        </font>
+    </Label>
+    <Label fx:id="lblAllAmount" alignment="CENTER" layoutX="173.0" layoutY="129.0" prefHeight="18.0" prefWidth="254.0" text="TOPLAM BORCUNUZ" />
+    <Button fx:id="btnPayCredit" layoutX="263.0" layoutY="299.0" mnemonicParsing="false" onAction="#onClickKrediOde" text="KREDİ ÖDE" />
+    <TextField fx:id="edtPayAmount" alignment="CENTER" layoutX="174.0" layoutY="255.0" prefHeight="26.0" prefWidth="254.0" promptText="ÖDEMEK İSTEDİĞİNİZ TUTAR" />
+    <Label fx:id="lblThisMonth" alignment="CENTER" layoutX="174.0" layoutY="188.0" prefHeight="18.0" prefWidth="254.0" text="BU AYKİ BORCUNUZ" />
+    <Label layoutX="252.0" layoutY="112.0" text="Toplam borcunuz:" />
+    <Label layoutX="253.0" layoutY="171.0" text="Bu ayki borcunuz:" />
+   <Label fx:id="lblResult" alignment="CENTER" layoutY="333.0" prefHeight="21.0" prefWidth="600.0" text="İşlem sonucu" textAlignment="CENTER" textFill="#651e1e" visible="false">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+   </Label>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.AccListController">
+    <Label alignment="CENTER" layoutX="14.0" layoutY="33.0" prefHeight="27.0" prefWidth="374.0" text="İŞLEM YAPABİLECEĞİNİZ HESAPLARINIZ">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <ListView fx:id="lvAcc" layoutX="69.0" layoutY="80.0" prefHeight="222.0" prefWidth="230.0" />
+    <Label fx:id="lblBakiye" alignment="CENTER" layoutX="302.0" layoutY="160.0" prefHeight="19.0" prefWidth="290.0">
+        <font>
+            <Font size="13.0" />
+        </font>
+    </Label>
+    <Label fx:id="lblHesapid" alignment="CENTER" layoutX="312.0" layoutY="182.0" prefHeight="19.0" prefWidth="283.0">
+        <font>
+            <Font size="13.0" />
+        </font>
+    </Label>
+    <Label alignment="CENTER" layoutX="312.0" layoutY="96.0" prefHeight="20.0" prefWidth="283.0" text="ŞU AN BULUNDUĞUNUZ HESABINIZ">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Button layoutX="138.0" layoutY="311.0" mnemonicParsing="false" onAction="#onClickHesapDegistir" text="Hesap değiştir" />
+   <Button layoutX="406.0" layoutY="222.0" mnemonicParsing="false" onAction="#onClickSil" text="Bu hesabı sil" />
+   <Label fx:id="lblResult" alignment="CENTER" layoutX="301.0" layoutY="275.0" prefHeight="17.0" prefWidth="299.0" text="AÇIKLAMA" textAlignment="CENTER" />
+</AnchorPane>

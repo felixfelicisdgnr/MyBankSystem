@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.yeocak.proje3.ui.RepAccHistory">
+    <ListView fx:id="lvCostumerName" layoutX="3.0" layoutY="102.0" prefHeight="261.0" prefWidth="134.0"/>
+    <TableView fx:id="table" layoutX="138.0" layoutY="101.0" prefHeight="261.0" prefWidth="449.0">
+      <columns>
+          <TableColumn fx:id="tableLogId" prefWidth="50.39996337890625" text="islem id"/>
+          <TableColumn fx:id="tableSourceTc" prefWidth="67.99992370605469" text="Kaynak TC"/>
+          <TableColumn fx:id="tableTargetTc" prefWidth="62.39996337890625" text="Hedef TC"/>
+          <TableColumn fx:id="tableOperation" prefWidth="35.20001220703125" text="İşlem"/>
+          <TableColumn fx:id="tableAmount" prefWidth="35.20001220703125" text="Tutar"/>
+          <TableColumn fx:id="tableSourceBalance" prefWidth="73.5999755859375" text="Kaynak Bakiye"/>
+          <TableColumn fx:id="tableTargetBalance" prefWidth="74.4000244140625" text="Hedef Bakiye"/>
+          <TableColumn fx:id="tableDate" prefWidth="44.800048828125" text="Tarih"/>
+      </columns>
+    </TableView>
+    <Label alignment="CENTER" layoutX="-2.0" layoutY="67.0" prefHeight="18.0" prefWidth="158.0" text="MÜŞTERİ İSİMLERİ">
+        <font>
+          <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label alignment="CENTER" layoutX="156.0" layoutY="67.0" prefHeight="18.0" prefWidth="438.0" text="HESAP DÖKÜMÜ">
+        <font>
+          <Font size="14.0"/>
+        </font>
+    </Label>
+    <Label alignment="CENTER" layoutX="142.0" layoutY="14.0" prefHeight="18.0" prefWidth="279.0"
+           text="MÜŞTERİ HESAP DÖKÜMÜ">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.SendMoneyController">
+    <Label layoutX="174.0" layoutY="22.0" text="PARA GÖNDERME İŞLEMİ">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <Button alignment="CENTER" layoutX="217.0" layoutY="277.0" mnemonicParsing="false" onAction="#onClickGonder" prefHeight="26.0" prefWidth="141.0" text="GÖNDER" />
+    <TextField fx:id="edtpeopleTc" alignment="CENTER" layoutX="174.0" layoutY="115.0" onKeyPressed="#onTextFieldsChanged" prefHeight="31.0" prefWidth="227.0" promptText="TC'nizi giriniz">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="edtaccountId" alignment="CENTER" layoutX="174.0" layoutY="163.0" onKeyPressed="#onTextFieldsChanged" prefHeight="31.0" prefWidth="227.0" promptText="Hesap ID'sini giriniz">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="edtamountSend" alignment="CENTER" layoutX="177.0" layoutY="217.0" onKeyPressed="#onTextFieldsChanged" prefHeight="31.0" prefWidth="221.0" promptText="Gönderilecek miktarı giriniz">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </TextField>
+    <Label fx:id="lblSuccessful" layoutX="221.0" layoutY="328.0" text="Başarıyla gönderildi!" textFill="#056f15" visible="false">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+
+
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.TransactionHistoryController">
+    <TableView fx:id="table" layoutX="1.0" layoutY="62.0" prefHeight="309.0" prefWidth="577.0">
+      <columns>
+          <TableColumn fx:id="tableLogId" prefWidth="64.0" text="log id" />
+          <TableColumn fx:id="tableSourceTc" prefWidth="65.60003662109375" text="kaynak tc" />
+          <TableColumn fx:id="tableTargetTc" prefWidth="60.800048828125" text="hedef tc" />
+          <TableColumn fx:id="tableOperation" prefWidth="93.0" text="işlem" />
+          <TableColumn fx:id="tableAmount" prefWidth="63.0" text="tutar" />
+          <TableColumn fx:id="tableSourceBalance" prefWidth="85.0" text="kaynak bakiye" />
+          <TableColumn fx:id="tableTargetBalance" text="hedef bakiye" />
+          <TableColumn fx:id="tableDate" prefWidth="64.0" text="tarih" />
+      </columns>
+    </TableView>
+    <Label alignment="CENTER" layoutX="1.0" layoutY="24.0" prefHeight="18.0" prefWidth="600.0" text="HESAP DÖKÜMÜ">
+        <font>
+          <Font size="21.0" />
+        </font>
+    </Label>
+</AnchorPane>

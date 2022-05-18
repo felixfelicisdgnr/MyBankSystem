@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.BossExchanges">
+   <children>
+      <Label alignment="CENTER" layoutX="156.0" layoutY="21.0" prefHeight="27.0" prefWidth="289.0" text="PARA BİRİMİ DÜZENLEME">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+
+      <ListView fx:id="lvExchanges" layoutX="47.0" layoutY="66.0" prefHeight="285.0" prefWidth="218.0" />
+      <TextField fx:id="edtAddName" alignment="CENTER" layoutX="342.0" layoutY="65.0" prefHeight="26.0" prefWidth="183.0" promptText="Döviz adı" />
+      <Button layoutX="413.0" layoutY="153.0" mnemonicParsing="false" onAction="#onClickEkle" text="EKLE" />
+      <Button layoutX="361.0" layoutY="224.0" mnemonicParsing="false" onAction="#onClickCikar" text="ÇIKAR" />
+      <TextField fx:id="edtAddRatio" alignment="CENTER" layoutX="342.0" layoutY="107.0" prefHeight="26.0" prefWidth="183.0" promptText="Döviz oranı" />
+      <Label layoutX="385.0" layoutY="256.0" text="Seçilen döviz ismi:" />
+      <Label layoutX="383.0" layoutY="305.0" text="Seçilen döviz oranı:" />
+      <TextField fx:id="edtExchangeName" disable="true" layoutX="359.0" layoutY="273.0" />
+      <TextField fx:id="edtExchangeRatio" layoutX="359.0" layoutY="322.0" />
+      <Button layoutX="449.0" layoutY="224.0" mnemonicParsing="false" onAction="#onClickKaydet" text="KAYDET" />
+   </children>
+</AnchorPane>

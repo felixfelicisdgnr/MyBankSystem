@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="375.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yeocak.proje3.ui.MainPageController">
+    <Label alignment="CENTER" layoutY="49.0" prefHeight="35.0" prefWidth="600.0" text="Banka sistemine hoşgeldiniz" textFill="#261e23">
+        <font>
+            <Font size="19.0" />
+        </font>
+    </Label>
+    <Label fx:id="lblUserName" alignment="CENTER" layoutY="90.0" prefHeight="35.0" prefWidth="600.0" text="YUNUS EMRE AYDENİZ">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <Label fx:id="lblBottomText" alignment="CENTER" layoutY="208.0" prefHeight="79.0" prefWidth="600.0" text="YUKARIDAKİ MENÜDEN İŞLEM SEÇEBİLİRSİNİZ" textAlignment="CENTER">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+</AnchorPane>
