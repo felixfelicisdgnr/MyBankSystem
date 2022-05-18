@@ -84,6 +84,7 @@ public class AuthRepository {
     }
 
     public static int getNumberOfCustomer(String tc){
+        // Müşteri sayısını aldım
         try {
             ResultSet resultSet = statement.executeQuery("SELECT COUNT(tc) FROM kisi WHERE temsilcisi_tc = '"+tc+"'");
             if (resultSet.next()) {
